@@ -2,7 +2,7 @@
 
 # use readline.supp in valgrind/create valgrind.log:
 
-	- valgrind --suppressions=readline.supp --leak-check=full --show-leak-kinds=all --track-origins=yes --log-file=valgrind.log
+	valgrind --suppressions=readline.supp --leak-check=full --show-leak-kinds=all --track-origins=yes --log-file=valgrind.log
 
 
 ## move logs & .opencodeignore into minishell/
