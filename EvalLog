@@ -1,0 +1,21 @@
+
+- exit codes wrong (my atoi?)
+
+- echo '$something' -> *something*  dissapears
+
+- unclosed " or ' does nothing and stays 0 exit-code
+
+- after unset PATH following isnt working:
+	-echo
+	-pwd
+	-env
+
+- early EXIT(1) if cd .. of non existing dir "getpwd failed"
+
+- ctr + C should set exitcode(130)
+	-in heredoc makes newLine <-should CLOSE heredoc
+	-if pressed while blocking cmd(cat *noARG) -> writes 2 prompt lines
+
+- ctr + \ jumps cursor to start of line / to first char of prompt
+	- if pressed while blocking cmd(cat *noARG) -> doesnt show "core dump" and does not print a newLine before prompt
+
